@@ -1,13 +1,15 @@
+# Definindo o nome do workflow
 name: CI/CD Pipeline
 
+# Definindo quando o workflow será executado
 on:
   push:
-    branches:
-      - main
+    branches: ['main', 'developer']
 
+# Definindo os jobs que o workflow executará
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
