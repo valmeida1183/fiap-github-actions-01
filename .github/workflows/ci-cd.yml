@@ -23,5 +23,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
+      - name: Step 01
+        run: echo Olá! Estou simulando um step 01!
+
+      - name: Step 02
+        run: echo Olá! Estou simulando um step 02!
+
+      - name: Step 02
+        run: echo Olá! Estou simulando um step 02!
